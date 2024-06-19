@@ -230,7 +230,7 @@ TYPED_TEST(CentralDifference, Hessian) {
   EXPECT_NEAR((*state.hessian)(1, 1), 0, PRECISION);
 }
 
-int main(int argc, char **argv) {
+int main(int argc, const char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
